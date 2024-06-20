@@ -1,0 +1,22 @@
+/* Filter.css */
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter .MuiTextField-root {
+    margin-bottom: 16px;
+}
+
+.filter .MuiButton-root {
+    margin-top: 20px;
+    width: 100%;
+}
