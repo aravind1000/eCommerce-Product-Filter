@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ProductList from './components/productList/ProductList';
-import ProductDetail from './components/productDetails/ProductDetails';
 import ProductProvider, { ProductContext } from './context/ProductContext';
 import './App.css';
 import Filter from './components/Filter/Filter';
@@ -27,7 +26,6 @@ const App = () => {
                     <ProductContext.Provider value={{ products: filteredProducts, error: null }}>
                         <Routes>
                             <Route path="/" element={<ProductList />} />
-                            <Route path="/product/:productId" element={<ProductDetail />} />
                         </Routes>
                     </ProductContext.Provider>
                 </div>

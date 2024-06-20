@@ -10,7 +10,7 @@ const ProductProvider = ({ children }) => {
     useEffect(() => {
         const loadProducts = async () => {
             try {
-                const data = await fetchProducts('AMZ', 'Laptop', 10, 1, 10000); // Example parameters
+                const data = await fetchProducts('AMZ', 'Laptop', 10, 1, 10000);
                 setProducts(data);
             } catch (error) {
                 setError(error.message);
